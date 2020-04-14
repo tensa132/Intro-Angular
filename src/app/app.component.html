@@ -22,3 +22,14 @@
 
 <p> Show this all the time </p>
 <p *ngIf="show"> Show only when boolean is true </p>
+
+<ng-template
+  *ngIf="show;then ShowBlock;else NotShowBlock">
+</ng-template>
+  
+<ng-template #ShowBlock>
+  <p> Show only when boolean is true </p>
+</ng-template>
+<ng-template #NotShowBlock>
+  <p> Show only when boolean is false </p>
+</ng-template>

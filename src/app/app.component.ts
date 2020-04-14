@@ -22,5 +22,5 @@ export class AppComponent  {
   }];
   
   arrAngka = [1,2,3,4];
-  show = true;
+  show = false;
 }
