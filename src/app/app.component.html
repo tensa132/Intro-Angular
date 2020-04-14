@@ -1,0 +1,24 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+
+  <br>
+  {{"Contoh menulis di angular"}}
+  <br/>
+  25+25 = {{25+25}}
+  <br><br/>
+  <input [(ngModel)]="a" type="text"/> * <input [(ngModel)]="b" type="text"/>
+  = {{a * b}}
+  {{item.name}} = {{item.harga | currency :'Rp' }}
+  <br><br/>
+  
+</p>
+<div *ngFor="let fruit of listItem; let i = index">
+    {{i+1}}. {{fruit.name}} - {{fruit.harga | currency : 'Rp'}}
+</div>
+<div *ngFor="let data of arrAngka">
+  {{data}}
+</div>
+
+<p> Show this all the time </p>
+<p *ngIf="show"> Show only when boolean is true </p>
