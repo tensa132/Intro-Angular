@@ -3,16 +3,16 @@
   Start editing to see some magic happen :)
 
   <br>
-  {{"Contoh menulis di angular"}}
+    {{"Contoh menulis di angular"}}
   <br/>
   25+25 = {{25+25}}
-  <br><br/>
-  <input [(ngModel)]="a" type="text"/> * <input [(ngModel)]="b" type="text"/>
-  = {{a * b}}
-  {{item.name}} = {{item.harga | currency :'Rp' }}
-  <br><br/>
   
 </p>
+
+<input [(ngModel)]="a" type="text"/> * <input [(ngModel)]="b" type="text"/>
+  = {{a * b}}
+  {{item.name}} = {{item.harga | currency :'Rp' }}
+
 <div *ngFor="let fruit of listItem; let i = index">
     {{i+1}}. {{fruit.name}} - {{fruit.harga | currency : 'Rp'}}
 </div>
@@ -26,7 +26,6 @@
 <ng-template
   *ngIf="show;then ShowBlock;else NotShowBlock">
 </ng-template>
-  
 <ng-template #ShowBlock>
   <p> Show only when boolean is true </p>
 </ng-template>
