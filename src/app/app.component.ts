@@ -20,7 +20,13 @@ export class AppComponent  {
     name : 'Apel',
     harga : 12000
   }];
-  
+
   arrAngka = [1,2,3,4];
   show = false;
+
+  user = "";
+  pesan = '';
+  klikButton() {
+    this.pesan = 'Halo Bro!';
+  }
 }

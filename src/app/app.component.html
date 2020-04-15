@@ -16,8 +16,14 @@
 <div *ngFor="let fruit of listItem; let i = index">
     {{i+1}}. {{fruit.name}} - {{fruit.harga | currency : 'Rp'}}
 </div>
-<div *ngFor="let data of arrAngka">
+<br><br/>
+<span *ngFor="let data of arrAngka"> 
   {{data}}
+</span>
+<div>
+  <p *ngFor="let data of arrAngka">
+    {{data}}
+  </p>
 </div>
 
 <p> Show this all the time </p>
@@ -32,3 +38,11 @@
 <ng-template #NotShowBlock>
   <p> Show only when boolean is false </p>
 </ng-template>
+
+<input [(ngModel)]="user" type="text"/>
+<ng-template *ngIf="user">
+  <p> Halo {{user}}! </p>
+</ng-template>
+
+<button (click)="klikButton()"> Click Me! </button>
+{{pesan}}
